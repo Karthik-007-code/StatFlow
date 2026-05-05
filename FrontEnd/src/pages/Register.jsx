@@ -30,12 +30,12 @@ const Register = () => {
 
         <form onSubmit={handleSubmit} className="auth-form">
           {error && <div className="auth-error">{error}</div>}
-          
+
           <div className="auth-field">
             <label>Full Name</label>
-            <input 
-              type="text" 
-              placeholder="Karthik"
+            <input
+              type="text"
+              placeholder="Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
@@ -44,9 +44,9 @@ const Register = () => {
 
           <div className="auth-field">
             <label>Email Address</label>
-            <input 
-              type="email" 
-              placeholder="karthik@example.com"
+            <input
+              type="email"
+              placeholder="[EMAIL_ADDRESS]"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -55,8 +55,8 @@ const Register = () => {
 
           <div className="auth-field">
             <label>Password</label>
-            <input 
-              type="password" 
+            <input
+              type="password"
               placeholder="••••••••"
               value={password}
               onChange={(e) => setPassword(e.target.value)}

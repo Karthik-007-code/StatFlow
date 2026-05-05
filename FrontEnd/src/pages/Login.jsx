@@ -29,12 +29,12 @@ const Login = () => {
 
         <form onSubmit={handleSubmit} className="auth-form">
           {error && <div className="auth-error">{error}</div>}
-          
+
           <div className="auth-field">
             <label>Email Address</label>
-            <input 
-              type="email" 
-              placeholder="karthik@example.com"
+            <input
+              type="email"
+              placeholder="[EMAIL_ADDRESS]"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -43,8 +43,8 @@ const Login = () => {
 
           <div className="auth-field">
             <label>Password</label>
-            <input 
-              type="password" 
+            <input
+              type="password"
               placeholder="••••••••"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
