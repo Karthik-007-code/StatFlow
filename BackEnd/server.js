@@ -18,7 +18,12 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 
-app.use(cors());
+
+
+app.use(cors({
+  origin: 'https://statflow-94h5.onrender.com',
+  credentials: true
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
